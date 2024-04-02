@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #9c0b7577, #c6ba1b88);
+}
+
+.card {
+    height: 60px;
+    width: 540px;
+    box-shadow: 0 0 5rem rgba(20, 20, 20, 20);
+    border-radius: 25px;
+    background: linear-gradient(to bottom left, rgba(223, 62, 175, 0.45), rgba(4, 143, 143, 0.249));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.card-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 3);
+    overflow: hidden;
+}
+
+.card-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card label {
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #ef0000;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.card-text {
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-text h1 {
+    font-size: 2.2rem;
+}
+
+.card-text h2 {
+    font-size: 1.8rem;
+}
+
+.card-text p {
+    font-size: 1.2rem;
+}
+
+.card-text span {
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:450px) {
+    .card {
+        width: 80%;
+    }
+
+    .card-pic {
+        width: 90%;
+    }
+
+    .card-text {
+        width: 90%;
+        gap: 0.5rem;
+    }
+
+    .card-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-text p {
+        font-size: 1rem;
+    }
+
+}
